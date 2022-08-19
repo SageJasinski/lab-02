@@ -26,6 +26,16 @@ document.getElementById('Usr-msg').innerHTML = 'Thank you for visiting my site '
 
 let correct = 0;
 
+function askQuestionWithAnswer(q,a) {
+    let response = prompt(q);
+    if (response.toLowerCase() === a.toLowerCase()) {
+      correct++;
+      return 'Correct!';
+    } else {
+      return 'Wrong!';
+    }
+  }
+
 for (let x = 0; x < questions.length; x++) {
     let response;
     if (x == 5){
@@ -72,14 +82,16 @@ for (let x = 0; x < questions.length; x++) {
             }
         }
     } else {
-        response = prompt(questions[x])
+        prompt(askQuestionWithAnswer(questions[x],answers[x]))
+        
+        // response = prompt(questions[x])
 
-        if (response.toLowerCase() === answers[x]) {
-            alert('You are correct!!');
-            correct += 1
-        } else {
-            alert('That\'s not quite right.')
-        }
+        // if (response.toLowerCase() === answers[x]) {
+        //     alert('You are correct!!');
+        //     correct += 1
+        // } else {
+        //     alert('That\'s not quite right.')
+        // }
     }
 };
 alert('You got ' + correct + ' out of 7 correct')
