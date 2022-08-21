@@ -7,45 +7,59 @@ body{
 h1 {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: aliceblue;
+    background-color: rgb(255, 250, 240);
+    width: 98vw;
     margin: 0px;
+    color: rgb(155, 110, 42);
 }
 
 h2 {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: aliceblue;
+    background-color: rgb(218, 177, 125);
+    color: rgb(75, 74, 74);
     margin: auto;
     padding: 20px;
-    width: 810px;
+    width: 95vw;
 }
 
 h3 {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: aliceblue;
+    background-color: rgb(255, 221, 152);
+    color: rgb(80, 78, 78);
     margin: auto;
-    width: 810px;
+    width: 95vw;
     padding: 20px;
 }
 ul {
     margin:auto;
-    width: 200px;
-    border: solid aliceblue 20px;
+    width: 50vw;
+    border: solid rgb(255, 250, 240) 20px;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 305px;
-    padding-right: 305px;
+    padding-left: 40vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    /* padding-right: 305px; */
+}
+ul li {
+    padding: 5px;
 }
 
 ol {
     margin: auto;
-    width: 200px;
-    border: solid aliceblue 20px;
+    width: 50vw;
+    border: solid rgb(255, 250, 240) 20px;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 305px;
-    padding-right: 305px;
+    padding-left: 40vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    /* padding-right: 305px; */
+}
+ol li {
+    padding: 5px;
 }
 
 p {
@@ -54,11 +68,14 @@ p {
     background-color: rgb(231, 224, 214);
     margin: auto;
     padding: 5px;
-    width: 800px;
-    border: solid aliceblue 20px;
+    width: 70vw;
+    border: solid rgb(255, 250, 240) 20px;
+    font-size: large;
+    font-weight: 500;
+    line-height: 30px;
 }
 
 #Usr-msg {
-    background-color: aliceblue;
+    background-color: rgb(255, 250, 240);
     font-size: large;
 }

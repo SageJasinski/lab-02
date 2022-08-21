@@ -1,24 +1,34 @@
 'use strict'; //strict syntax
 
 let questions = [
-    'Do Apes have tails?',
-    'Was the Gameboy created by a Janitor?',
-    'Do penguins propose to each other with singing?',
-    'Does honey have an expiration date?',
-    'Does an octopus have 3 hearts, 9 brains, and blue blood?',
+    'Is my favorite color orange?',
+    'Is my favorite animal a fox?',
+    'Have I ever been to japan?',
+    'Have I ever done a backflip?',
+    'Am I married?',
     'Guess a number between 1 and 10',
-    'What is my favorite nintendo game?'
+    'What is my favorite nintendo game?',
 ]
 
 let answers = [
-    'no',
+    'yes',
     'yes',
     'no',
     'no',
     'yes',
     8,
-    ['castlevania','mario kart','metroid','zelda','mario party',]
+    ['castlevania','mario kart','metroid','zelda','mario party','mario']
 ]
+
+function askQuestionWithAnswer(q,a) {
+    let res = prompt(q);
+    if (res.toLowerCase() === a.toLowerCase()) {
+        alert('You got it');
+        correct++;
+    } else {
+        alert('Not quite');
+    }
+}
 
 let player = prompt('What is your name?');
 alert('How\'s it going ' + player + ' Ready to play a little guessing game?')
@@ -72,14 +82,7 @@ for (let x = 0; x < questions.length; x++) {
             }
         }
     } else {
-        response = prompt(questions[x])
-
-        if (response.toLowerCase() === answers[x]) {
-            alert('You are correct!!');
-            correct += 1
-        } else {
-            alert('That\'s not quite right.')
-        }
+        askQuestionWithAnswer(questions[x], answers[x]);
     }
-};
-alert('You got ' + correct + ' out of 7 correct')
+}
+alert('you got ' + correct + ' out of 7 correct!')
